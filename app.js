@@ -18,6 +18,6 @@ const BugReportingRouter = require('./routes/BugReportingEmailController')
 app.use('/cases',BugReportingRouter)
 
 
-const port= process.env.PORT || 9000;
+const port= process.env.PORT || 80;
 
 app.listen(port, ()=> console.log(`Listening on port ${port}`)); 
