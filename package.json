@@ -16,7 +16,7 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Sudeept_Das",
   "license": "ISC"
