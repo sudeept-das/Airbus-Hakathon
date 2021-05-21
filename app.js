@@ -2,11 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose')
 const app= express()
 var nodemailer = require('nodemailer');
+const cors= require('cors')
 
 const uri = "mongodb+srv://abhisekkumar:passcode23@internproject-zscmu.mongodb.net/Airbus?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json())
+app.use(cors())
 
 app.get('/', (req,res)=>{
     res.send('Hello Users');
